@@ -5,47 +5,25 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>My Custom Next.js App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          한양대학교 정문입니다.
         </h1>
 
         <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
+          다같이 과잠 입고 찍은 사진입니다.
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <img
+            src="/my_custom_image.jpg"
+            alt="My Custom Image"
+            className={styles.cardImage}
+          />
         </div>
       </main>
 
@@ -70,8 +48,8 @@ export default function Home() {
           align-items: center;
         }
         footer {
-          width: 100%;
-          height: 100px;
+          width: 50%;
+          height: 50px;
           border-top: 1px solid #eaeaea;
           display: flex;
           justify-content: center;
@@ -124,6 +102,11 @@ export default function Home() {
         }
         * {
           box-sizing: border-box;
+        }
+        .cardImage {
+          width: 25%; /* 이미지의 너비를 현재 크기의 25%로 설정합니다. */
+          height: auto; /* 높이를 자동으로 조절하여 가로 세로 비율을 유지합니다. */
+          margin-bottom: 20px; /* 이미지 아래에 간격을 추가합니다. */
         }
       `}</style>
     </div>
